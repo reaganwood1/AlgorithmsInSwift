@@ -4,12 +4,12 @@ import UIKit
 
 var str = "Hello, playground"
 
-class Node {
-    var value: String
+class Node<T> {
+    var value: T
     var children: [Node] = []
     weak var parentNode: Node?
     
-    init (value: String) {
+    init (value: T) {
         self.value = value
     }
     
@@ -17,8 +17,9 @@ class Node {
         child.parentNode = self
         children.append(child)
     }
-    
-    func search (value: String) -> Node? {
+}
+extension Node where T: Equatable {
+    func search (value: T) -> Node? {
         if self.value == value {
             return self
         }
