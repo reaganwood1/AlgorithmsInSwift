@@ -12,10 +12,19 @@ class BinaryTree {
     }
 }
 
+
+extension BinaryTree {
+    func deleteFromTreeByValue (value: Int) {
+        if value == self.value {
+            // delete
+        }
+    }
+}
+
 extension BinaryTree {
     
     func addValueToTree (value: Int) {
-        var tree = BinaryTree(value: value)
+        let tree = BinaryTree(value: value)
         addBinaryTree(tree: tree)
     }
     
@@ -39,7 +48,7 @@ extension BinaryTree {
         if let rightNode = rightChild {
             rightNode.addBinaryTree(tree: bTree)
         } else {
-            rightNode = bTree
+            rightChild = bTree
         }
     }
     
