@@ -17,6 +17,8 @@
 		7F8D4D3620D0AC3F0063581B /* PizzaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8D4D3520D0AC3F0063581B /* PizzaStore.swift */; };
 		7F8D4D3820D0AC9D0063581B /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8D4D3720D0AC9D0063581B /* Pizza.swift */; };
 		7F8D4D3A20D0ACA90063581B /* PizzaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F8D4D3920D0ACA90063581B /* PizzaFactory.swift */; };
+		7FC543AE20D34252007D12C8 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC543AD20D34252007D12C8 /* Game.swift */; };
+		7FC543B020D3429D007D12C8 /* GameStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC543AF20D3429D007D12C8 /* GameStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		7F8D4D3520D0AC3F0063581B /* PizzaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaStore.swift; sourceTree = "<group>"; };
 		7F8D4D3720D0AC9D0063581B /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
 		7F8D4D3920D0ACA90063581B /* PizzaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaFactory.swift; sourceTree = "<group>"; };
+		7FC543AD20D34252007D12C8 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7FC543AF20D3429D007D12C8 /* GameStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		7F8D4D0620D0AC1C0063581B /* FactoryPatternSwift */ = {
 			isa = PBXGroup;
 			children = (
+				7FC543AC20D34220007D12C8 /* AbstractFactoryExample */,
 				7F8D4D0720D0AC1C0063581B /* AppDelegate.swift */,
 				7F8D4D0920D0AC1C0063581B /* ViewController.swift */,
 				7F8D4D0B20D0AC1C0063581B /* Main.storyboard */,
@@ -132,6 +137,15 @@
 				7F8D4D2920D0AC200063581B /* Info.plist */,
 			);
 			path = FactoryPatternSwiftUITests;
+			sourceTree = "<group>";
+		};
+		7FC543AC20D34220007D12C8 /* AbstractFactoryExample */ = {
+			isa = PBXGroup;
+			children = (
+				7FC543AD20D34252007D12C8 /* Game.swift */,
+				7FC543AF20D3429D007D12C8 /* GameStore.swift */,
+			);
+			path = AbstractFactoryExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +280,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F8D4D3820D0AC9D0063581B /* Pizza.swift in Sources */,
+				7FC543AE20D34252007D12C8 /* Game.swift in Sources */,
 				7F8D4D3620D0AC3F0063581B /* PizzaStore.swift in Sources */,
 				7F8D4D3A20D0ACA90063581B /* PizzaFactory.swift in Sources */,
 				7F8D4D0A20D0AC1C0063581B /* ViewController.swift in Sources */,
+				7FC543B020D3429D007D12C8 /* GameStore.swift in Sources */,
 				7F8D4D0820D0AC1C0063581B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
