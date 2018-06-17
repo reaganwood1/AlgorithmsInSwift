@@ -9,13 +9,23 @@
 import Foundation
 
 class RemoteControl {
-    private var slot: Command? = nil
     
-    public func setCommand (command: Command) {
-        slot = command
+    private var onSlots: [Int : Command] = [:]
+    private var offSlots: [Int : Command] = [:]
+    
+    public func setOnCommand (slot: Int, command: Command) {
+        onSlots[slot] = command
     }
     
-    public func buttonPressed () {
-        slot?.execute()
+    public func setOffComand (slot: Int, command: Command) {
+        offSlots[slot] = command
+    }
+    
+    public func onButtonPressed (slot: Int) {
+        onSlots[slot]?.execute()
+    }
+    
+    public func offButtonPressed (slot: Int) {
+        offSlots[slot]?.execute()
     }
 }
