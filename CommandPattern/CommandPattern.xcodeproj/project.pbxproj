@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F0397FB20D889BB00D1FF3E /* NoCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0397FA20D889BB00D1FF3E /* NoCommand.swift */; };
+		7F0397FD20D88A8500D1FF3E /* CeilingFan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0397FC20D88A8500D1FF3E /* CeilingFan.swift */; };
 		7F9592D320D6B80F00D3CA7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9592D220D6B80F00D3CA7D /* AppDelegate.swift */; };
 		7F9592D520D6B80F00D3CA7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9592D420D6B80F00D3CA7D /* ViewController.swift */; };
 		7F9592D820D6B80F00D3CA7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F9592D620D6B80F00D3CA7D /* Main.storyboard */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F0397FA20D889BB00D1FF3E /* NoCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoCommand.swift; sourceTree = "<group>"; };
+		7F0397FC20D88A8500D1FF3E /* CeilingFan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeilingFan.swift; sourceTree = "<group>"; };
 		7F9592CF20D6B80F00D3CA7D /* CommandPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommandPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F9592D220D6B80F00D3CA7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F9592D420D6B80F00D3CA7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				7F95930020D6C02D00D3CA7D /* Command.swift */,
 				7F95930320D6C07200D3CA7D /* LightOnCommand.swift */,
 				7F95930520D6C15400D3CA7D /* RemoteControl.swift */,
+				7F0397FA20D889BB00D1FF3E /* NoCommand.swift */,
+				7F0397FC20D88A8500D1FF3E /* CeilingFan.swift */,
 			);
 			path = CommandPattern;
 			sourceTree = "<group>";
@@ -275,8 +281,10 @@
 			files = (
 				7F95930620D6C15400D3CA7D /* RemoteControl.swift in Sources */,
 				7F9592D520D6B80F00D3CA7D /* ViewController.swift in Sources */,
+				7F0397FD20D88A8500D1FF3E /* CeilingFan.swift in Sources */,
 				7F9592D320D6B80F00D3CA7D /* AppDelegate.swift in Sources */,
 				7F95930120D6C02D00D3CA7D /* Command.swift in Sources */,
+				7F0397FB20D889BB00D1FF3E /* NoCommand.swift in Sources */,
 				7F95930420D6C07200D3CA7D /* LightOnCommand.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

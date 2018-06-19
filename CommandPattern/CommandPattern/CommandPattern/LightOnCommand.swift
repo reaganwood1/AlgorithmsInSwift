@@ -19,6 +19,10 @@ class LightOnCommand : Command {
     func execute() {
         light.turnOn()
     }
+    
+    func undo () {
+        light.turnOff()
+    }
 }
 
 class Light {
