@@ -26,22 +26,23 @@ class CeilingFan {
 
 class CeilingFanControl: Command {
     private var fan: CeilingFan
+    private var previousSpeed = 0
     
     init (fan: CeilingFan) {
         self.fan = fan
     }
     
     func execute() {
+        previousSpeed = fan.getSpeed()
         fan.setSpeedHigh()
     }
     
     func undo() {
-        let fanSpeed = fan.getSpeed()
-        if fanSpeed == 3 {
+        if previousSpeed == 3 {
             fan.setSpeedMedium()
-        } else if fanSpeed == 2 {
+        } else if previousSpeed == 2 {
             fan.setSpeedLow()
-        } else if fanSpeed == 1 {
+        } else if previousSpeed == 1 {
             fan.setSpeedOff()
         }
     }

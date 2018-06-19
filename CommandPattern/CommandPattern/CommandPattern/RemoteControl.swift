@@ -12,6 +12,7 @@ class RemoteControl {
     
     private var onSlots: [Int : Command] = [:]
     private var offSlots: [Int : Command] = [:]
+    private var undo: Command? = NoCommand()
     
     public func setOnCommand (slot: Int, command: Command) {
         onSlots[slot] = command
@@ -27,5 +28,10 @@ class RemoteControl {
     
     public func offButtonPressed (slot: Int) {
         offSlots[slot]?.execute()
+        undo = offSlots[slot]
+    }
+    
+    public func undoButtonPressed (slot: Int) {
+        undo?.undo()
     }
 }
